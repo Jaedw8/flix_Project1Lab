@@ -16,6 +16,7 @@
 		A11E50A62028085C00831CBC /* flix_Project1LabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11E50A52028085C00831CBC /* flix_Project1LabTests.swift */; };
 		A11E50B12028085C00831CBC /* flix_Project1LabUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11E50B02028085C00831CBC /* flix_Project1LabUITests.swift */; };
 		A11E50BF20280C6C00831CBC /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11E50BE20280C6C00831CBC /* PhotosViewController.swift */; };
+		A11E50C120281BCF00831CBC /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11E50C020281BCF00831CBC /* PhotoCell.swift */; };
 		CDE338FE6502D8E854EFDF36 /* Pods_flix_Project1LabTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265A1FF944F45DFF1DC24D90 /* Pods_flix_Project1LabTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		A11E50B02028085C00831CBC /* flix_Project1LabUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flix_Project1LabUITests.swift; sourceTree = "<group>"; };
 		A11E50B22028085C00831CBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A11E50BE20280C6C00831CBC /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		A11E50C020281BCF00831CBC /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		B0C17EEA88E3823AB3690837 /* Pods-flix_Project1Lab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flix_Project1Lab.release.xcconfig"; path = "Pods/Target Support Files/Pods-flix_Project1Lab/Pods-flix_Project1Lab.release.xcconfig"; sourceTree = "<group>"; };
 		B5E38AC7E9DD48CDDB0E6605 /* Pods-flix_Project1LabUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flix_Project1LabUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-flix_Project1LabUITests/Pods-flix_Project1LabUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CD2966D1B716F7C71E8233FF /* Pods-flix_Project1LabTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flix_Project1LabTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-flix_Project1LabTests/Pods-flix_Project1LabTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				A11E50972028085B00831CBC /* Assets.xcassets */,
 				A11E50992028085B00831CBC /* LaunchScreen.storyboard */,
 				A11E509C2028085B00831CBC /* Info.plist */,
+				A11E50C020281BCF00831CBC /* PhotoCell.swift */,
 			);
 			path = flix_Project1Lab;
 			sourceTree = "<group>";
@@ -461,6 +464,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A11E50912028085B00831CBC /* AppDelegate.swift in Sources */,
+				A11E50C120281BCF00831CBC /* PhotoCell.swift in Sources */,
 				A11E50BF20280C6C00831CBC /* PhotosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
