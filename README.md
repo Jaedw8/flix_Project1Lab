@@ -1,9 +1,9 @@
 # flix_Project1Lab
 # Lab 1 - *flix_Project1Lab*
 
-**Name of your app** is a photo browsing app using the [The Tumblr API](https://www.tumblr.com/docs/en/api/v2#posts).
+**flix_Project1Lab** is a photo browsing app using the [The Tumblr API](https://www.tumblr.com/docs/en/api/v2#posts).
 
-Time spent: **X** hours spent in total
+Time spent: **5* hours spent in total
 
 ## User Stories
 
