@@ -11,17 +11,21 @@ import UIKit
 import AlamofireImage
 
 
+
 class PhotosViewController: UIViewController,
     UITableViewDataSource,
     UITableViewDelegate
 {
     
+    
     @IBOutlet weak var tableView: UITableView!
     
+    var image: UIImage!
     var posts: [[String: Any]] = []
     
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
         return posts.count
     }
     
@@ -40,9 +44,34 @@ class PhotosViewController: UIViewController,
         return cell
     }
     
+    
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        
+        let vc = segue.destination as! PhotoDetailsViewController
+        
+        let cell = sender as! UITableViewCell
+        
+        let indexPath = tableView.indexPath(for: cell)!
+        //same as the code above
+        let post = posts[indexPath.row]
+        let photos = post["photos"] as! [[String: Any]]
+        let photo = photos[0]
+        let originalSize = photo["original_size"] as! [String: Any]
+        let urlString = originalSize["url"] as! String
+        print(urlString + "\n")
+        let url = URL(string: urlString)
+        vc.imageURL = url!
+        
+    }
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        
         
         tableView.rowHeight = 250
         
@@ -74,6 +103,7 @@ class PhotosViewController: UIViewController,
     
     
 }
+
 
 
 
